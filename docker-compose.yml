@@ -14,8 +14,8 @@ services:
   wordpress:
     depends_on:
       - db
-    #build: .
-    image: conwayb/docker_wp${TAG}
+    build: .
+    image: stoneman/docker_wp${TAG}
     volumes:
       - ./htdocs:/usr/share/nginx/html
     links:
